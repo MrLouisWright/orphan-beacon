@@ -1,0 +1,54 @@
+{
+  "name": "orphan-beacon",
+  "version": "1.0.0",
+  "description": "Find orphan pages in your built static site and measure click depth from the homepage: pages with no internal inbound links, unreachable clusters, nofollow-only or noindex-only links, pages too deep, dead ends. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "orphan-beacon": "bin/orphan-beacon.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "orphan-pages",
+    "internal-links",
+    "internal-linking",
+    "click-depth",
+    "crawl-depth",
+    "site-architecture",
+    "seo",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/orphan-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/orphan-beacon/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/orphan-beacon#readme"
+}
