@@ -1,5 +1,7 @@
 # orphan-beacon
 
+[![npm version](https://img.shields.io/npm/v/orphan-beacon.svg)](https://www.npmjs.com/package/orphan-beacon) [![CI](https://github.com/MrLouisWright/orphan-beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/orphan-beacon/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/orphan-beacon.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Find the pages in your built static site that nothing links to, and measure how many clicks every page is from the homepage.
 
 Search engines discover and weigh pages through internal links. A page that only exists in the sitemap, a blog series that only links to itself, or a product buried six clicks deep gets crawled rarely and ranks poorly. `orphan-beacon` builds the internal link graph from your built HTML, walks it from the homepage like a crawler, and reports orphans, unreachable clusters and deep pages with the file, severity and a **concrete fix**.
