@@ -1,6 +1,6 @@
 {
   "name": "orphan-beacon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find orphan pages in your built static site and measure click depth from the homepage: pages with no internal inbound links, unreachable clusters, nofollow-only or noindex-only links, pages too deep, dead ends. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
