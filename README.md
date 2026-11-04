@@ -68,7 +68,7 @@ MEDIUM   dead.html /dead.html is 5 clicks from / (max 3) [orphan-too-deep]
 ## Options
 
 ```text
-orphan-beacon 1.0.0 — find orphan pages and measure click depth in your built static site
+orphan-beacon 1.0.1 — find orphan pages and measure click depth in your built static site
 
 Usage: orphan-beacon [site-dir] [options]
 
@@ -171,11 +171,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev orphan-beacon
+```
+
 ```js
 import { check } from "orphan-beacon";
 const report = check("dist", { maxDepth: 4 });
 console.log(report.info); // { pages, orphans, maxDepth, start }
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("orphan-beacon")` from CommonJS.
 
 Types are included.
 
